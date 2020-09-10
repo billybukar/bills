@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>whatsthebill.com</title>
+</head>
+<body>
+    
+    <header id='header' class="header">
+        <h1 id="title"></h1>
+    
+        <p class="message">Total Bills: <span id="showTotalHeader" class = "headerElement">$ 0.00</span></p>
+        <p class="message">Amount paid: <span id="showAmountPaidHeader" class ="headerElement">$ 0.00</span></p>
+        <p class="message">Left To Pay: <span id="showleftToPayHeader" class="headerElement">$ 0.00</span></p>
+
+            
+        <div class="sidebar">
+             <span class="menu">=</span> 
+            
+            <ul class="sidebar-content">
+            <li id="viewBills">View Bills</li>
+            <li id="addNewBills">Add New Bill</li>
+            <li id="showBillTotal" >Show Bills and Totals</li>
+            <li id="removeBill">Delete a Bill</li>
+            <li id="editBills" >Edit Bills</li>
+            <li id="resetBillsToUnpaid">Reset All Bills to Un-paid</li>
+            <li id="getBillTotals">Get Totals to Pay</li>
+            </ul>
+        
+     
+    </header>
+    <main class="main-content">   
+    
+                
+    
+    <div id ="newBillForm" class="hide">
+        <h3>Add a New Bill</h3> 
+        <span class="span">Name:</span> <input type="text" class="add-bill" id="name" placeholder="Add the Bills Name"> <br><br>
+        <span class="span">Account:</span> <input type="text" class="add-bill" id="account" placeholder="Account Funds Come From"><br><br>
+        <span class="span">Due Date:</span> <input type="text" class="add-bill" id="due_date" placeholder="Add the Due Date"><br><br>
+        <span class="span dueDate">Amount:</span><input type="number" class="add-bill" id="amount" placeholder="Add the Amount"><br><br>
+        <button id="addBill" >Add new bill</button>
+    </div>
+    <aside><div id="total-div">Check the Boxes to Calculate Bills.</div></aside>
+    <div id="showBills" class="showBills"></div> 
+     
+    
+</main>  
+   
+    <script src="app.js"></script> 
+       
+</body>
+</html>
